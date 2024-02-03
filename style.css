@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #008cff;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'poppins', sans-serif;
+}
+
+header .container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container ul li {
+    list-style: none;
+    padding: 1em;
+    font-family: 'poppins', sans-serif;
+}
+
+header .container ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+section {
+    padding-bottom: 5vw;
+}
+
+.sobre-loja{
+    width: 90%;
+    padding-top: 5vw;
+}
+
+.article-sobre {
+    display: flex;
+}
+
+.article-sobre img{
+    width: 25vw; 
+    margin-right: 2%;
+}
+
+.header{
+    border-bottom: 3px solid #008cff;
+    margin-bottom: 2vw;
+}
+
+.header h2{
+    color: #008cff;
+    padding-bottom: 8px;
+}
+.produto img {
+    max-width: 100%;
+}
+
+.produtos-loja {
+    max-width: 90%;
+}
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 22.75%);
+    column-gap: 3%;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.produto h3{
+    margin-top: 1vw;
+}
+
+.produto p{
+    margin-top: 1vw;
+    font-size: 1em;
+}
+.produto button{
+    margin-top: 1vw;
+    padding: 0.4vw 1.0vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 1vw;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #008cff;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header {
+        padding: 8px 0;
+        background-color: #008cff;
+        color: #fff;
+    }
+
+    header h1 {
+        padding-left: 0.5em;
+        font-family: 'poppins', sans-serif;
+    }
+
+    header .container ul{
+        display: block;
+        text-align: center;
+    }
+    header .container ul li {
+        list-style: none;
+        padding: 0.1em;
+        margin-right: 0.5em;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .sobre-loja{
+        width: 80%;
+        padding-top: 5vw;
+    }
+    .article-sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-sobre img{
+        width: 70vw; 
+        height: 70vw;
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .header{
+        border-bottom: 3px solid #008cff;
+        margin-bottom: 2em;
+    }
+    
+    .header h2{
+        color: #008cff;
+        padding-bottom: 1em;
+    }
+
+    .produtos-loja{
+        max-width: 80%;
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+    .produtos{
+        display: block;
+        max-width: 80%;
+    }
+    
+    .produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vw;
+        max-width: 100%;
+    }
+
+    .produto h3{
+        font-size: 1.5em;
+        margin-top: 5vw;
+    }
+    
+    .produto p{
+        margin-top: 4vw;
+        font-size: 1em;
+    }
+    .produto button{
+        margin-top: 4vw;
+        padding:2vw 6%;
+        border: none;
+        border-radius: 8px;
+        font-size: 5vw;
+        font-family: 'poppins', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #008cff;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header {
+        padding: 8px 0;
+        background-color: #008cff;
+        color: #fff;
+    }
+
+    header h1 {
+        padding-left: 1em;
+        font-family: 'poppins', sans-serif;
+    }
+
+    header .container ul{
+        display: flex;
+        text-align: center;
+    }
+    header .container ul li {
+        list-style: none;
+        padding: 0.1em;
+        margin-right: 2em;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .sobre-loja{
+        width: 100vw;
+        padding-top: 5vw;
+    }
+    .conteudo p{
+        font-size: 1.4em;
+    }
+    .article-sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .article-sobre img{
+        width: 50vw; 
+        margin-bottom: 5%;
+    }
+
+    .header{
+        border-bottom: 3px solid #008cff;
+        margin-bottom: 3.5vw;
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+        row-gap: 5%;
+    }
+
+    .produto{
+        max-width: 100%;
+    }
+    
+    .produto h3{
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 3.5vw;
+    }
+    
+    .produto p{
+        margin-top: 2vw;
+        font-size: 1.5em;
+    }
+
+    .produto button{
+        margin-top: 2vw;
+        padding: 1.3vw 5vw;
+        border: none;
+        border-radius: 8px;
+        font-size: 2vw;
+        font-family: 'poppins', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #008cff;
+        margin-bottom: 2vw;
+    }
+}
